@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My WIFEY ❤️</title>
+
+  <style>
+    :root{
+      --primary:#ff4d6d;
+      --bg1:#ff9a9e;
+      --bg2:#fad0c4;
+      --glass: rgba(255,255,255,0.25);
+      --text:#1f1f1f;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg,var(--bg1),var(--bg2));
+      overflow-x:hidden;
+      color:var(--text);
+    }
+
+    .app{
+      width:100%;
+      max-width:900px;
+      padding:20px;
+    }
+
+    .card{
+      background: var(--glass);
+      backdrop-filter: blur(18px);
+      border:1px solid rgba(255,255,255,0.4);
+      border-radius:24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      overflow:hidden;
+      animation: fadeUp 1.2s ease;
+    }
+
+    header{
+      text-align:center;
+      padding:30px 20px 10px;
+    }
+
+    header h1{
+      font-size:2.2rem;
+      color:var(--primary);
+    }
+
+    header p{
+      margin-top:5px;
+      opacity:0.8;
+    }
+
+    /* SLIDESHOW */
+    .slideshow{
+      position:relative;
+      height:320px;
+      overflow:hidden;
+      border-radius:18px;
+      margin:20px;
+    }
+
+    .slideshow img{
+      position:absolute;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      opacity:0;
+      transition: opacity 1s ease;
+      transform: scale(1.05);
+    }
+
+    .slideshow img.active{ opacity:1; }
+
+    .content{
+      padding:20px;
+      text-align:center;
+    }
+
+    .title{ font-size:1.4rem; margin-bottom:10px; }
+    .subtitle{ opacity:0.8; margin-bottom:20px; }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      margin:20px 0;
+    }
+
+    button{
+      padding:12px 18px;
+      border:none;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:600;
+      transition:0.3s ease;
+      background:var(--primary);
+      color:white;
+    }
+
+    button:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* MODAL */
+    .modal{
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.6);
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .modal-content{
+      background:white;
+      max-width:700px;
+      max-height:80vh;
+      overflow-y:auto;
+      padding:25px;
+      border-radius:18px;
+      animation: fadeUp 0.5s ease;
+      text-align:left;
+    }
+
+    .close{
+      float:right;
+      cursor:pointer;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(20px);}
+      to{opacity:1; transform:translateY(0);}
+    }
+
+    .heart{
+      position:fixed;
+      color:red;
+      animation: floatUp 5s linear infinite;
+      font-size:20px;
+    }
+
+    @keyframes floatUp{
+      from{transform:translateY(100vh); opacity:1;}
+      to{transform:translateY(-10vh); opacity:0;}
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="app">
+  <div class="card">
+
+    <header>
+      <h1>For Onalenna Manyeneng ❤️</h1>
+      <p>My WIFEY  🌼</p>
+    </header>
+
+    <div class="slideshow">
+      <img src="img1.jpeg" class="active">
+      <img src="img2.jpeg">
+      <img src="img3.jpeg">
+    </div>
+
+    <div class="content">
+      <div class="title">💖 I'm Truly Sorry</div>
+      <div class="subtitle">I just want to make things right with you.</div>
+
+      <div class="buttons">
+        <button onclick="openModal()">💖 Forgive Me?</button>
+        <button onclick="openLetter()">💌 Read My Letter</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL FOR LETTER -->
+<div id="letterModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>💌 A Letter From My Heart</h2>
+    <br>
+
+    <p>
+    My love,<br><br>
+
+
+I'm writing this because I need you to understand  how sorry I am really  sorry from the  apex of my heart where you live and will always live.
+
+I hurt The person I love most in this entire world.I caused you pain. And that knowledge haunts me every single moment. You trusted me with your heart, and I failed to protect it the way I should have. The way you deserved.
+
+You are the most incredible person I have ever known. Your kindness, your strength, the way your eyes light up when you laugh, the way you make every room brighter just by being in it my Buttercup you are my everything.I can never fully forgive myself for hurting you.
+
+I'm not asking you to forget the pain. I know healing takes time, and I will wait as long as it takes. What I am asking is for a chance.... a chance to show you, through every action, every day, every moment that I can be the person you deserve. The person who puts your happiness above everything else.
+
+You are my sunrise and my sunset. You are the reason I want to be better. And I promise you  with everything I am, that I will spend the rest of my days making sure you never doubt my love again.
+
+I know trust is earned, not given. So let me earn it. Day by day. Word by word. Action by action. Until the day you can look at me and feel nothing but love and safety.
+
+Forever and always yours 💕
+
+ 💗💕<br><br>
+This letter was written with every beat of my heart 💗
+    </p>
+
+  </div>
+</div>
+
+<!-- MODAL FOR FORGIVE -->
+<div id="forgiveModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>💖 I Love You</h2>
+    <p>
+      My WIFEY ❤️ I know I hurt you, but I truly want to make things right with you.
+      You mean everything to me, and I am deeply sorry for what happened.
+    </p>
+  </div>
+</div>
+
+<script>
+  function openLetter(){
+    document.getElementById('letterModal').style.display='flex';
+  }
+
+  function openModal(){
+    document.getElementById('forgiveModal').style.display='flex';
+  }
+
+  function closeModal(){
+    document.querySelectorAll('.modal').forEach(m=>m.style.display='none');
+  }
+
+  // SLIDESHOW
+  let i=0;
+  const imgs=document.querySelectorAll('.slideshow img');
+  setInterval(()=>{
+    imgs[i].classList.remove('active');
+    i=(i+1)%imgs.length;
+    imgs[i].classList.add('active');
+  },3000);
+
+  // HEARTS
+  setInterval(()=>{
+    const h=document.createElement('div');
+    h.classList.add('heart');
+    h.innerText='❤️';
+    h.style.left=Math.random()*100+'vw';
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),5000);
+  },300);
+</script>
+
+</body>
+</html>
